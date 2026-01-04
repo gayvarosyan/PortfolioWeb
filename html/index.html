@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Matthews - Creative Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="nav-btn nav-btn-1"><img src="../images/btn_1.png" alt="home page"></a></li>
+            <li><a href="about.html" class="nav-btn nav-btn-2"><img src="../images/btn_2.png" alt="about me"></a></li>
+            <li><a href="portfolio.html" class="nav-btn nav-btn-3"><img src="../images/btn_3.png" alt="portfolio"></a></li>
+            <li><a href="services.html" class="nav-btn nav-btn-4"><img src="../images/btn_4.png" alt="services"></a></li>
+            <li><a href="contact.html" class="nav-btn nav-btn-5"><img src="../images/btn_5.png" alt="contact"></a></li>
+        </ul>
+        <img src="../images/menu_line.png" alt="" class="nav-line">
+    </nav>
+
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="../images/logo.png" alt="William Matthews Creative Portfolio" class="logo">
+        </div>
+        <div class="slogan-section">
+            <img src="../images/h_web_design.png" alt="I love web design!" class="slogan">
+            <div class="coffee-stain"></div>
+        </div>
+    </header>
+
+    <section class="slider-section">
+        <div class="slider-container">
+            <button class="slider-arrow slider-arrow-left" onclick="changeSlide(-1)">
+                <img src="../images/slide_arrow_left.png" alt="Previous">
+            </button>
+            
+            <div class="slides-wrapper">
+                <div class="slides" id="slidesContainer">
+                    <div class="slide">
+                        <img src="../images/thumb.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumb-02.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumb-03.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbb.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbb-02.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbb-03.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbbb.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbbb-02.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/thumbbb-03.jpg" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="slider-arrow slider-arrow-right" onclick="changeSlide(1)">
+                <img src="../images/slide_arrow_right.png" alt="Next">
+            </button>
+        </div>
+    </section>
+
+    <section class="content-columns">
+        <div class="column about-column">
+            <div class="column-header">
+                <img src="../images/h_about.png" alt="ABOUT" class="header-image">
+            </div>
+            <div class="column-content">
+                <p class="highlight-text">Lorem ipsum dolor sit amet, lorem consectetuer adipiscing elit. Aenean augue pede</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <a href="#" class="btn-more">
+                    <img src="../images/btn_more.png" alt="more">
+                </a>
+            </div>
+        </div>
+
+        <div class="column vision-column">
+            <div class="column-header">
+                <img src="../images/h_vision.png" alt="VISION" class="header-image">
+            </div>
+            <div class="column-content">
+                <p class="highlight-text">Fusce interdum. Maecenas eu elit sed nulla dignissim interdum. Sed laoreet.</p>
+                <ul class="vision-list">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetuer adipiscing elit</li>
+                    <li>Aenean commodo ligula eget</li>
+                    <li>Cum sociis natoque penatibus</li>
+                </ul>
+                <a href="#" class="btn-more">
+                    <img src="../images/btn_more.png" alt="more">
+                </a>
+            </div>
+        </div>
+
+        <div class="column news-column">
+            <div class="column-header">
+                <img src="../images/h_news.png" alt="NEWS" class="header-image">
+            </div>
+            <div class="column-content">
+                <div class="news-item">
+                    <div class="news-date">25.03.2011</div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">25.03.2011</div>
+                    <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                </div>
+                <a href="#" class="btn-more">
+                    <img src="../images/btn_more.png" alt="more">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <img src="../images/b_content.png" alt="" class="footer-line">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">home page</a></li>
+                    <li>|</li>
+                    <li><a href="about.html">about me</a></li>
+                    <li>|</li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li>|</li>
+                    <li><a href="services.html">services</a></li>
+                    <li>|</li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <p class="copyright">Copyright 2011 © William Matthews. All rights reserved</p>
+            </div>
+            <div class="footer-social">
+                <img src="../images/h_follow.png" alt="follow me" class="follow-text">
+                <div class="social-icons">
+                    <a href="#"><img src="../images/icon_rss.png" alt="RSS"></a>
+                    <a href="#"><img src="../images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icon_tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 1;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const slidesContainer = document.getElementById('slidesContainer');
+
+        function updateSlides() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            if (slides[currentSlide]) {
+                slides[currentSlide].classList.add('active');
+            }
+            
+            const activeWidth = 320;
+            const inactiveWidth = 280;
+            const gap = 20;
+            const wrapper = slidesContainer.parentElement;
+            const containerWidth = wrapper.offsetWidth;
+            
+            let totalWidthBefore = 0;
+            for (let i = 0; i < currentSlide; i++) {
+                totalWidthBefore += inactiveWidth + gap;
+            }
+            
+            const offset = (containerWidth / 2) - (activeWidth / 2) - totalWidthBefore;
+            
+            slidesContainer.style.transform = `translateX(${offset}px)`;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            
+            if (currentSlide >= totalSlides - 1) {
+                currentSlide = totalSlides - 1;
+            } else if (currentSlide <= 0) {
+                currentSlide = 0;
+            }
+            
+            updateSlides();
+        }
+
+        updateSlides();
+
+        setInterval(() => {
+            if (currentSlide < totalSlides - 1) {
+                changeSlide(1);
+            } else {
+                currentSlide = 0;
+                updateSlides();
+            }
+        }, 5000);
+
+        const navButtons = {
+            'nav-btn-1': { normal: '../images/btn_1.png', hover: '../images/btn_1_over.png' },
+            'nav-btn-2': { normal: '../images/btn_2.png', hover: '../images/btn_2_over.png' },
+            'nav-btn-3': { normal: '../images/btn_3.png', hover: '../images/btn_3_over.png' },
+            'nav-btn-4': { normal: '../images/btn_4.png', hover: '../images/btn_4_over.png' },
+            'nav-btn-5': { normal: '../images/btn_5.png', hover: '../images/btn_5_over.png' }
+        };
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            const btnClass = Array.from(btn.classList).find(cls => cls.startsWith('nav-btn-'));
+            if (btnClass) {
+                const config = navButtons[btnClass];
+                const img = btn.querySelector('img');
+                
+                if (config) {
+                    btn.addEventListener('mouseenter', () => {
+                        img.src = config.hover;
+                    });
+                    
+                    btn.addEventListener('mouseleave', () => {
+                        img.src = config.normal;
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

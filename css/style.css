@@ -1,0 +1,399 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/b_body.jpg');
+    background-repeat: repeat;
+    background-color: #f5f2e8;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Top Navigation */
+.top-nav {
+    padding: 20px 40px;
+    background: transparent;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.top-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.top-nav a img {
+    height: auto;
+    display: block;
+}
+
+.nav-line {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Header Section */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.logo-section {
+    flex: 0 0 auto;
+}
+
+.logo {
+    max-width: 400px;
+    height: auto;
+}
+
+.slogan-section {
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: 20px;
+}
+
+.slogan {
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.coffee-stain {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(139, 69, 19, 0.1) 0%, rgba(139, 69, 19, 0.05) 50%, transparent 70%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Slider Section */
+.slider-section {
+    padding: 40px 20px;
+    position: relative;
+}
+
+.slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: opacity 0.3s;
+}
+
+.slider-arrow:hover {
+    opacity: 0.7;
+}
+
+.slider-arrow img {
+    width: 40px;
+    height: auto;
+}
+
+.slides-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    width: fit-content;
+    align-items: center;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 280px;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    transform: scale(0.85);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+    width: 320px;
+    z-index: 2;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Content Columns */
+.content-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.column {
+    background: transparent;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.column-content {
+    color: #333;
+}
+
+.column-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.highlight-text {
+    color: #7a9e5f !important;
+    font-weight: normal;
+}
+
+.vision-list {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.vision-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.vision-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #7a9e5f;
+    display: block;
+}
+
+.btn-more {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-more img {
+    width: auto;
+    height: auto;
+}
+
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-date {
+    background-color: #e8e8e8;
+    color: #999;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+/* Footer */
+.main-footer {
+    margin-top: 60px;
+    padding: 40px;
+    background: transparent;
+}
+
+.footer-line {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-nav li {
+    color: #999;
+    font-size: 13px;
+}
+
+.footer-nav a {
+    color: #999;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.footer-nav a:hover {
+    color: #8b4513;
+}
+
+.copyright {
+    color: #999;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    position: relative;
+}
+
+.follow-text {
+    max-width: 150px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .content-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .slogan-section {
+        margin-top: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-social {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-nav ul {
+        gap: 15px;
+    }
+    
+    .slider-container {
+        flex-direction: column;
+    }
+    
+    .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .slider-arrow-left {
+        left: 10px;
+    }
+    
+    .slider-arrow-right {
+        right: 10px;
+    }
+}
+
