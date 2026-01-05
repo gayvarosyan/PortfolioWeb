@@ -1,0 +1,115 @@
+.about-page {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 40px 40px;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    column-gap: 60px;
+    align-items: flex-start;
+}
+
+.about-photo {
+    background-image: url('../images/b_thumb.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 16px;
+}
+
+.about-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    color: #333;
+}
+
+.about-title-image {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-intro {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.about-secondary {
+    display: grid;
+    grid-template-columns: 1.05fr 1.4fr;
+    column-gap: 60px;
+    margin-top: 50px;
+}
+
+.about-column {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.section-title-image {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.education-column p {
+    margin-bottom: 10px;
+}
+
+.education-column p strong {
+    font-weight: bold;
+}
+
+.experience-column .highlight-text {
+    margin-bottom: 15px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 10px;
+}
+
+.experience-item {
+    margin-bottom: 8px;
+}
+
+.experience-role {
+    color: #2b7a3d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.experience-role:hover {
+    text-decoration: underline;
+}
+
+.experience-company {
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 968px) {
+    .about-page {
+        padding: 0 20px 40px;
+    }
+
+    .about-main {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .about-secondary {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}

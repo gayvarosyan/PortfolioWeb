@@ -2,9 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - William Matthews</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="nav-btn nav-btn-1"><img src="../images/btn_1.png" alt="home page"></a></li>
+            <li><a href="about.html" class="nav-btn nav-btn-2"><img src="../images/btn_2.png" alt="about me"></a></li>
+            <li><a href="portfolio.html" class="nav-btn nav-btn-3"><img src="../images/btn_3.png" alt="portfolio"></a></li>
+            <li><a href="services.html" class="nav-btn nav-btn-4"><img src="../images/btn_4.png" alt="services"></a></li>
+            <li><a href="contact.html" class="nav-btn nav-btn-5"><img src="../images/btn_5.png" alt="contact"></a></li>
+        </ul>
+        <img src="../images/menu_line.png" alt="" class="nav-line">
+    </nav>
 
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="../images/logo.png" alt="William Matthews Creative Portfolio" class="logo">
+        </div>
+        <div class="slogan-section">
+            <img src="../images/h_web_design.png" alt="I love web design!" class="slogan">
+            <div class="coffee-stain"></div>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="about-main">
+            <div class="about-photo">
+                <img src="../images/img_about_me.jpg" alt="About Me" class="about-main-image">
+            </div>
+            <div class="about-text">
+                <img src="../images/h_about_me.png" alt="ABOUT ME" class="about-title-image">
+                <p class="highlight-text about-intro">
+                    Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Aenean augue pede.
+                </p>
+                <p>
+                    Morbi volutpat leo in ligula. Integer vel magna. Quisque ut magna et nisi bibendum sagittis.
+                    Fusce elit ligula, sodales sit amet, tincidunt in, ullamcorper condimentum, lectus. Aliquam ut
+                    massa bibendum sagittis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna.
+                    Nunc laoreet lacinia nunc. In volutpat sodales ipsum. Sed vestibulum. Integer in ante.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-secondary">
+            <div class="about-column education-column">
+                <img src="../images/h_education.png" alt="EDUCATION" class="section-title-image">
+                <p class="highlight-text">
+                    "Lorem ipsum dolor sit amet, elit. Aenean augue pede"
+                </p>
+                <p><strong>Morbi volutpat leo in ligula.</strong> Integer vel magna.</p>
+                <p><strong>Fusce elit ligula,</strong> sodales sit amet, tincidunt in.</p>
+                <p><strong>Labortis purus vel urna.</strong> Nunc laoreet lacinia nunc.</p>
+            </div>
+
+            <div class="about-column experience-column">
+                <img src="../images/h_design_experience.png" alt="DESIGN EXPERIENCE" class="section-title-image">
+                <p class="highlight-text">
+                    Morbi volutpat leo in ligula. Integer vel magna. Quisque ut magna et nisi bibendum sagittis.
+                </p>
+
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">Head Designer</a>
+                        <div class="experience-company">Lorem Ipsum Design</div>
+                    </div>
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">Flash Interface</a>
+                        <div class="experience-company">Morbi Media</div>
+                    </div>
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">Art Editor</a>
+                        <div class="experience-company">Dolores Media</div>
+                    </div>
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">Web Designer</a>
+                        <div class="experience-company">Integer NetServices</div>
+                    </div>
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">User Interface</a>
+                        <div class="experience-company">Designer Bibendum</div>
+                    </div>
+                    <div class="experience-item">
+                        <a href="#" class="experience-role">Graphic Designer</a>
+                        <div class="experience-company">Magna Innovative</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <img src="../images/b_content.png" alt="" class="footer-line">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">home page</a></li>
+                    <li>|</li>
+                    <li><a href="about.html">about me</a></li>
+                    <li>|</li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li>|</li>
+                    <li><a href="services.html">services</a></li>
+                    <li>|</li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <p class="copyright">Copyright 2011 © William Matthews. All rights reserved</p>
+            </div>
+            <div class="footer-social">
+                <img src="../images/h_follow.png" alt="follow me" class="follow-text">
+                <div class="social-icons">
+                    <a href="#"><img src="../images/icon_rss.png" alt="RSS"></a>
+                    <a href="#"><img src="../images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icon_tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navButtons = {
+            'nav-btn-1': { normal: '../images/btn_1.png', hover: '../images/btn_1_over.png' },
+            'nav-btn-2': { normal: '../images/btn_2.png', hover: '../images/btn_2_over.png' },
+            'nav-btn-3': { normal: '../images/btn_3.png', hover: '../images/btn_3_over.png' },
+            'nav-btn-4': { normal: '../images/btn_4.png', hover: '../images/btn_4_over.png' },
+            'nav-btn-5': { normal: '../images/btn_5.png', hover: '../images/btn_5_over.png' }
+        };
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            const btnClass = Array.from(btn.classList).find(cls => cls.startsWith('nav-btn-'));
+            if (btnClass) {
+                const config = navButtons[btnClass];
+                const img = btn.querySelector('img');
+
+                if (config) {
+                    btn.addEventListener('mouseenter', () => {
+                        img.src = config.hover;
+                    });
+
+                    btn.addEventListener('mouseleave', () => {
+                        img.src = config.normal;
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
