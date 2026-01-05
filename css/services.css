@@ -1,0 +1,85 @@
+.services-page {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 40px 40px;
+}
+
+.services-main {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    column-gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.services-photo {
+    background-image: url('../images/b_thumb.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 16px;
+}
+
+.services-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.services-text {
+    color: #333;
+}
+
+.services-title-image {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.services-intro {
+    margin-bottom: 15px;
+}
+
+.services-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.services-secondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-column {
+    background: transparent;
+}
+
+.service-title-image {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.services-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.services-column strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.services-column .btn-more {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.services-column .btn-more img {
+    width: auto;
+    height: auto;
+}

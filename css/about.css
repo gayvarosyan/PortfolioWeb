@@ -97,19 +97,3 @@
     font-size: 12px;
     color: #666;
 }
-
-@media (max-width: 968px) {
-    .about-page {
-        padding: 0 20px 40px;
-    }
-
-    .about-main {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
-
-    .about-secondary {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-    }
-}

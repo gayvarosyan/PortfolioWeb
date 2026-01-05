@@ -2,9 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - William Matthews</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="nav-btn nav-btn-1"><img src="../images/btn_1.png" alt="home page"></a></li>
+            <li><a href="about.html" class="nav-btn nav-btn-2"><img src="../images/btn_2.png" alt="about me"></a></li>
+            <li><a href="portfolio.html" class="nav-btn nav-btn-3"><img src="../images/btn_3.png" alt="portfolio"></a></li>
+            <li><a href="services.html" class="nav-btn nav-btn-4"><img src="../images/btn_4.png" alt="services"></a></li>
+            <li><a href="contact.html" class="nav-btn nav-btn-5"><img src="../images/btn_5.png" alt="contact"></a></li>
+        </ul>
+        <img src="../images/menu_line.png" alt="" class="nav-line">
+    </nav>
 
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="../images/logo.png" alt="William Matthews Creative Portfolio" class="logo">
+        </div>
+        <div class="slogan-section">
+            <img src="../images/h_web_design.png" alt="I love web design!" class="slogan">
+            <div class="coffee-stain"></div>
+        </div>
+    </header>
+
+    <main class="portfolio-page">
+        <div class="portfolio-container">
+            <aside class="portfolio-sidebar">
+                <div class="folio-header">
+                    <img src="../images/h_folio.png" alt="FOLIO" class="folio-title">
+                </div>
+                
+                <nav class="portfolio-nav">
+                    <div class="portfolio-category">
+                        <div class="category-header">
+                            <span class="category-bullet"></span>
+                            <span class="category-name">Web Design</span>
+                        </div>
+                        <ul class="category-items">
+                            <li><a href="#" class="portfolio-item active">Art Gallery</a></li>
+                            <li><a href="#" class="portfolio-item">Frogz Design</a></li>
+                            <li><a href="#" class="portfolio-item">Net Solutions</a></li>
+                            <li><a href="#" class="portfolio-item">Jenny Page Rock Star</a></li>
+                            <li><a href="#" class="portfolio-item">Auto Parts</a></li>
+                            <li><a href="#" class="portfolio-item">Global Hosting Co.</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="portfolio-category">
+                        <div class="category-header">
+                            <span class="category-bullet"></span>
+                            <span class="category-name">Logo Design</span>
+                        </div>
+                        <ul class="category-items">
+                            <li><a href="#" class="portfolio-item">Fit Club</a></li>
+                            <li><a href="#" class="portfolio-item">Biz Innovate</a></li>
+                            <li><a href="#" class="portfolio-item">Net Solutions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="portfolio-category">
+                        <div class="category-header">
+                            <span class="category-bullet"></span>
+                            <span class="category-name">Brochure Design</span>
+                        </div>
+                        <ul class="category-items">
+                            <li><a href="#" class="portfolio-item">Net Solutions</a></li>
+                            <li><a href="#" class="portfolio-item">Auto Parts</a></li>
+                            <li><a href="#" class="portfolio-item">Global Hosting Co.</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <section class="portfolio-content">
+                <div class="portfolio-section-header">
+                    <span class="section-checkmark">✓</span>
+                    <h2 class="portfolio-section-title">Art Gallery | Website design</h2>
+                </div>
+
+                <div class="embedded-site">
+                    <div class="embedded-nav">
+                        <a href="#">HOME PAGE</a>
+                        <a href="#">ABOUT US</a>
+                        <a href="#">ARTISTS</a>
+                        <a href="#">EXHIBITIONS</a>
+                        <a href="#">CONTACTS</a>
+                    </div>
+                    
+                    <div class="embedded-slider">
+                        <button class="embedded-arrow embedded-arrow-left" onclick="changeEmbeddedSlide(-1)">
+                            <img src="../images/slide_arrow_left.png" alt="Previous">
+                        </button>
+                        
+                        <div class="embedded-slides-wrapper">
+                            <div class="embedded-slides" id="embeddedSlidesContainer">
+                                <div class="embedded-slide active">
+                                    <img src="../images/p1_preview1.jpg" alt="Art Gallery Preview">
+                                </div>
+                                <div class="embedded-slide">
+                                    <img src="../images/p1_preview2.jpg" alt="Art Gallery Preview">
+                                </div>
+                                <div class="embedded-slide">
+                                    <img src="../images/p1_preview3.jpg" alt="Art Gallery Preview">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="embedded-arrow embedded-arrow-right" onclick="changeEmbeddedSlide(1)">
+                            <img src="../images/slide_arrow_right.png" alt="Next">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-three-columns">
+                    <div class="portfolio-col">
+                        <h3 class="portfolio-col-title">Welcome to our gallery</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales ipsum.</p>
+                        <p>Sed vestibulum. Integer in ante. Sed posuere ligula rhoncus erat. Fusce interdum. Maecenas eu elit sed nulla dignissim interdum.</p>
+                    </div>
+                    
+                    <div class="portfolio-col">
+                        <h3 class="portfolio-col-title">News & Events</h3>
+                        <div class="portfolio-news-item">
+                            <div class="portfolio-news-date">23.07.08</div>
+                            <p>Praesent vel odio. Curabitur tempor aliquet lectus. Nullam ullamcorper, velit in adipiscing lobortis.</p>
+                            <a href="#" class="portfolio-more-link">more</a>
+                        </div>
+                        <div class="portfolio-news-item">
+                            <div class="portfolio-news-date">23.07.08</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nulla.</p>
+                            <a href="#" class="portfolio-more-link">more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-col">
+                        <h3 class="portfolio-col-title">About us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna.</p>
+                        
+                        <h3 class="portfolio-col-title">Featured exhibition</h3>
+                        <p>Nunc laoreet lacinia nunc. In volutpat sodales ipsum.</p>
+                        <a href="#" class="portfolio-arrow-link">
+                            <img src="../images/arrow_link.png" alt="arrow">
+                        </a>
+                        
+                        <h3 class="portfolio-col-title">Artist of the Month</h3>
+                        <p>Sed vestibulum. Integer in ante. Sed posuere ligula rhoncus erat.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-footer-links">
+                    <a href="#" class="portfolio-site-link">www.artgallery.com</a>
+                    <div class="portfolio-pagination">
+                        <button class="portfolio-page-btn active">1</button>
+                        <button class="portfolio-page-btn">2</button>
+                        <button class="portfolio-page-btn">3</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <img src="../images/b_content.png" alt="" class="footer-line">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">home page</a></li>
+                    <li>|</li>
+                    <li><a href="about.html">about me</a></li>
+                    <li>|</li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li>|</li>
+                    <li><a href="services.html">services</a></li>
+                    <li>|</li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <p class="copyright">Copyright 2011 © William Matthews. All rights reserved</p>
+            </div>
+            <div class="footer-social">
+                <img src="../images/h_follow.png" alt="follow me" class="follow-text">
+                <div class="social-icons">
+                    <a href="#"><img src="../images/icon_rss.png" alt="RSS"></a>
+                    <a href="#"><img src="../images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icon_tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navButtons = {
+            'nav-btn-1': { normal: '../images/btn_1.png', hover: '../images/btn_1_over.png' },
+            'nav-btn-2': { normal: '../images/btn_2.png', hover: '../images/btn_2_over.png' },
+            'nav-btn-3': { normal: '../images/btn_3.png', hover: '../images/btn_3_over.png' },
+            'nav-btn-4': { normal: '../images/btn_4.png', hover: '../images/btn_4_over.png' },
+            'nav-btn-5': { normal: '../images/btn_5.png', hover: '../images/btn_5_over.png' }
+        };
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            const btnClass = Array.from(btn.classList).find(cls => cls.startsWith('nav-btn-'));
+            if (btnClass) {
+                const config = navButtons[btnClass];
+                const img = btn.querySelector('img');
+                
+                if (config) {
+                    btn.addEventListener('mouseenter', () => {
+                        img.src = config.hover;
+                    });
+                    
+                    btn.addEventListener('mouseleave', () => {
+                        img.src = config.normal;
+                    });
+                }
+            }
+        });
+
+        let currentEmbeddedSlide = 0;
+        const embeddedSlides = document.querySelectorAll('.embedded-slide');
+        const totalEmbeddedSlides = embeddedSlides.length;
+        const embeddedSlidesContainer = document.getElementById('embeddedSlidesContainer');
+
+        function changeEmbeddedSlide(direction) {
+            embeddedSlides[currentEmbeddedSlide].classList.remove('active');
+            currentEmbeddedSlide += direction;
+            
+            if (currentEmbeddedSlide >= totalEmbeddedSlides) {
+                currentEmbeddedSlide = 0;
+            } else if (currentEmbeddedSlide < 0) {
+                currentEmbeddedSlide = totalEmbeddedSlides - 1;
+            }
+            
+            embeddedSlides[currentEmbeddedSlide].classList.add('active');
+        }
+
+        setInterval(() => {
+            if (currentEmbeddedSlide < totalEmbeddedSlides - 1) {
+                changeEmbeddedSlide(1);
+            } else {
+                currentEmbeddedSlide = 0;
+                embeddedSlides.forEach(slide => slide.classList.remove('active'));
+                embeddedSlides[0].classList.add('active');
+            }
+        }, 5000);
+    </script>
 </body>
 </html>
