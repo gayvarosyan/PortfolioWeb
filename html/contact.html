@@ -2,9 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - William Matthews</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="nav-btn nav-btn-1"><img src="../images/btn_1.png" alt="home page"></a></li>
+            <li><a href="about.html" class="nav-btn nav-btn-2"><img src="../images/btn_2.png" alt="about me"></a></li>
+            <li><a href="portfolio.html" class="nav-btn nav-btn-3"><img src="../images/btn_3.png" alt="portfolio"></a></li>
+            <li><a href="services.html" class="nav-btn nav-btn-4"><img src="../images/btn_4.png" alt="services"></a></li>
+            <li><a href="contact.html" class="nav-btn nav-btn-5"><img src="../images/btn_5.png" alt="contact"></a></li>
+        </ul>
+        <img src="../images/menu_line.png" alt="" class="nav-line">
+    </nav>
 
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="../images/logo.png" alt="William Matthews Creative Portfolio" class="logo">
+        </div>
+        <div class="slogan-section">
+            <img src="../images/h_web_design.png" alt="I love web design!" class="slogan">
+            <div class="coffee-stain"></div>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-me-section">
+            <div class="contact-me-content">
+                <img src="../images/h_contact_me.png" alt="CONTACT ME" class="contact-title-image">
+                <p class="contact-phone">+44 (0)20 7575 1234</p>
+                <p class="contact-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna.
+                    Nunc laoreet lacinia nunc. In volutpat sodales ipsum. Sed vestibulum. Integer in ante.
+                </p>
+                <p class="contact-text">
+                    Morbi volutpat leo in ligula. Integer vel magna. Quisque ut magna et nisi bibendum sagittis.
+                    Fusce elit ligula, sodales sit amet, tincidunt in, ullamcorper condimentum, lectus.
+                </p>
+            </div>
+            <div class="contact-illustration">
+                <img src="../images/img_contact_me.png" alt="Contact Illustration" class="contact-illustration-img">
+            </div>
+        </section>
+
+        <section class="drop-line-section">
+            <img src="../images/h_drop_me_a_line.png" alt="DROP ME A LINE" class="drop-line-title-image">
+            
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" class="form-input">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" name="email" class="form-input">
+                    </div>
+                    <div class="form-field">
+                        <label for="website">WEBSITE</label>
+                        <input type="text" id="website" name="website" class="form-input">
+                    </div>
+                </div>
+                
+                <div class="form-field form-field-message">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="6" class="form-textarea"></textarea>
+                </div>
+                
+                <div class="form-submit-wrapper">
+                    <button type="submit" class="form-submit-btn">
+                        <img src="../images/btn_send.png" alt="send message">
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <img src="../images/b_content.png" alt="" class="footer-line">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">home page</a></li>
+                    <li>|</li>
+                    <li><a href="about.html">about me</a></li>
+                    <li>|</li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li>|</li>
+                    <li><a href="services.html">services</a></li>
+                    <li>|</li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <p class="copyright">Copyright 2011 © William Matthews. All rights reserved</p>
+            </div>
+            <div class="footer-social">
+                <img src="../images/h_follow.png" alt="follow me" class="follow-text">
+                <div class="social-icons">
+                    <a href="#"><img src="../images/icon_rss.png" alt="RSS"></a>
+                    <a href="#"><img src="../images/icon_fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icon_tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navButtons = {
+            'nav-btn-1': { normal: '../images/btn_1.png', hover: '../images/btn_1_over.png' },
+            'nav-btn-2': { normal: '../images/btn_2.png', hover: '../images/btn_2_over.png' },
+            'nav-btn-3': { normal: '../images/btn_3.png', hover: '../images/btn_3_over.png' },
+            'nav-btn-4': { normal: '../images/btn_4.png', hover: '../images/btn_4_over.png' },
+            'nav-btn-5': { normal: '../images/btn_5.png', hover: '../images/btn_5_over.png' }
+        };
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            const btnClass = Array.from(btn.classList).find(cls => cls.startsWith('nav-btn-'));
+            if (btnClass) {
+                const config = navButtons[btnClass];
+                const img = btn.querySelector('img');
+                
+                if (config) {
+                    btn.addEventListener('mouseenter', () => {
+                        img.src = config.hover;
+                    });
+                    
+                    btn.addEventListener('mouseleave', () => {
+                        img.src = config.normal;
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
